@@ -2,7 +2,7 @@
  Cyber-Attack Detection System for Internet of Health Things (IoHT) Devices Using Federated Learning
 # Data Used
  - ECU-IoHT https://ro.ecu.edu.au/datasets/48/
- - 	https://ro.ecu.edu.au/datasets/48/ 
+
 # References
 1.	Mosaiyebzadeh, Fatemeh, et al. "Intrusion Detection System for IoHT Devices using Federated Learning." IEEE INFOCOM 2023-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS). IEEE, 2023.
 2.	https://github.com/fatemehm/Federated-Learning-IDS
