@@ -15,6 +15,7 @@ Specifically, the ML-FL model will act as a classifier for each client and will 
 - DoS attacks
 - NMAP port scans
 - Smurf attacks
+
 Additionally, students will investigate the effectiveness of ML-FL models and compare their performance with centralized ML models in terms of prediction accuracy. This project will not only enhance students' understanding of ML/FL and cybersecurity but also contribute to the development of more robust IDSs for e-healthcare.
 
 
