@@ -11,8 +11,8 @@ This project aims to address the data privacy challenge and provide a more secur
 
 ## References
 1.	Mosaiyebzadeh, Fatemeh, et al. "Intrusion Detection System for IoHT Devices using Federated Learning." IEEE INFOCOM 2023-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS). IEEE, 2023.
-2.	https://github.com/fatemehm/Federated-Learning-IDS
+2.	[Federated Learning-Based IoHT Intrusion Detection System](https://github.com/fatemehm/Federated-Learning-IDS)
 3.	Vijayakumar, Kedalu Poornachary, et al. "Enhanced cyber attack detection process for Internet of health things (IoHT) devices using deep neural network." Processes 11.4 (2023): 1072. 
 4.	Ahmed, Mohiuddin, et al. "ECU-IoHT: A dataset for analyzing cyberattacks in Internet of Health Things." Ad Hoc Networks 122 (2021): 102621.
-5.	https://github.com/CSCRC-SCREED/ECU-IoHT
-6.	https://github.com/brunabazaluk/tabtransformer_iot_attacks
+5. [ECU-IoHT: A Dataset for Analyzing Cyberattacks in Internet of Health Things](https://github.com/CSCRC-SCREED/ECU-IoHT)
+6. [TabTransformer for IoT Attacks](https://github.com/brunabazaluk/tabtransformer_iot_attacks)
