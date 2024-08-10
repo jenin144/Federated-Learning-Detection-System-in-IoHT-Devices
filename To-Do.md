@@ -8,7 +8,7 @@
 ## Machine Learning Models and Technical Work - Alaa
 - Research the following machine learning models: DNN (Deep Neural Network) and SVM (Support Vector Machine).
 - Create a folder named Technical Work, add Jupyter Notebook files into the Technical Work folder and Review the code used in the notebooks.
-- Review Google Colab features.
 
 ## Attack Types - Sondos
 - Gather information about the different types of attacks mentioned in the paper.
+- Gather information about Google Colab.
