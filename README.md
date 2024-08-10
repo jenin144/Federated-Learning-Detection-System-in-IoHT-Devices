@@ -4,7 +4,7 @@ With the growing volume of sensitive data transmitted through IT infrastructures
 This project aims to address the data privacy challenge and provide a more secure environment for patients’ private data. Students will investigate the design of an ML-based FL architecture to detect anomalies in IoHT traffic without compromising patient data. They will also explore the development of a decentralized ML model in federated learning (ML-FL model), including (i) Support Vector Machines (SVM), (ii) Feedforward Neural Networks (FNN), (iii) Convolutional Neural Networks (CNN), and (iv) Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM) units. Specifically, the ML-FL model will act as a classifier for each client and will analyze network traffic to detect various cyber-attacks, such as spoofing attacks, data alteration, ARP spoofing, DoS attacks, NMAP port scans, and smurf attacks. Additionally, students will investigate the effectiveness of ML-FL models and compare their performance with centralized ML models in terms of prediction accuracy. This project will not only enhance students' understanding of ML/FL and cybersecurity but also contribute to the development of more robust IDSs for e-healthcare.
 
 ## Report
- - [Overleaf project](https://www.overleaf.com/project/66ae675b4bd3662c6bf31519)
+ - [Overleaf project](https://www.overleaf.com/9867887565yysgfsrqqwtn#797c58)
    
 ## Datasets Used
  - [ECU-IoHT](https://ro.ecu.edu.au/datasets/48/)
