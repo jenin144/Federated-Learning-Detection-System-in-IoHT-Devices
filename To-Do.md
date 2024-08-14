@@ -3,7 +3,7 @@
 ## Datasets - Jenin
 - Create a folder named Datasets and put the datasets (CSV files) into it.
 - Analyze the features in the datasets (features related to device, features related to patients such as blood pressure, oxygen levels..etc).
-- Highlight important information and provide a summary for each dataset
+- Highlight important information and provide a summary for each dataset.
 
 ## Machine Learning Models and Technical Work - Alaa
 - Research the following machine learning models: DNN (Deep Neural Network) and SVM (Support Vector Machine).
