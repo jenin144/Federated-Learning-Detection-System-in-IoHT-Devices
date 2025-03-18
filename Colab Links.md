@@ -3,3 +3,6 @@
 
 2. **Multi Classification**  
    [Click here to view the Colab notebook for Multi Classification](https://colab.research.google.com/drive/1_NHC9iyU6xaBZob2Xjdbi5j6merLTeLw#scrollTo=tFP-ly2safQu)
+
+3. **Testing the Model on captured_packets.csv for Binary Classification**  
+   [Click here to view the Colab notebook for testing the model on captured_packets.csv](https://colab.research.google.com/drive/1d-oPNw5ujJrF073HqwbO62qSxhH2lbeb#scrollTo=RZ_-Ogmxz1Yl)
