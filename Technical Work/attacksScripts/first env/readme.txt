@@ -1,4 +1,4 @@
-this eviroment like that:
+this environment like that:
 attacker: kali linux
 victim: ubuntu linux
 ai model: vs code in windows
