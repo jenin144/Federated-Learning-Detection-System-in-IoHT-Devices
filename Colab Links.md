@@ -8,4 +8,8 @@
    [Click here to view the Colab notebook for testing the model on captured_packets.csv](https://colab.research.google.com/drive/1d-oPNw5ujJrF073HqwbO62qSxhH2lbeb#scrollTo=RZ_-Ogmxz1Yl)
 
 4. Transfer Learning https://colab.research.google.com/drive/1arox_hgBsFe3ZWRbExTaqo2TZ2nBgu3x?usp=sharing
-    
+
+
+5. الدمج للاحتياط فقظ
+  https://colab.research.google.com/drive/1Tdz8xOvk7HA3oDHG1NSx_5I9gYT2GGAW?usp=sharing
+   
