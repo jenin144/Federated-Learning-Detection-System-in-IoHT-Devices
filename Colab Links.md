@@ -11,5 +11,5 @@
 
 
 5. الدمج للاحتياط فقظ
-  https://colab.research.google.com/drive/1Tdz8xOvk7HA3oDHG1NSx_5I9gYT2GGAW?usp=sharing
-   
+6. **Encrypted Federated Learning**  
+   [Click here to view the Colab notebook for Encrypted Federated Learning](https://colab.research.google.com/drive/1H4P4x7WVoNTZAcnl1bDacrBkgS-53mfa#scrollTo=-suS_dUTeafP)
