@@ -10,6 +10,6 @@
 4. Transfer Learning https://colab.research.google.com/drive/1arox_hgBsFe3ZWRbExTaqo2TZ2nBgu3x?usp=sharing
 
 
-5. الدمج للاحتياط فقظ
-6. **Encrypted Federated Learning**  
+ الدمج للاحتياط فقظ
+5. **CKKS_HE (Encrypted Federated Learning)**  
    [Click here to view the Colab notebook for Encrypted Federated Learning](https://colab.research.google.com/drive/1H4P4x7WVoNTZAcnl1bDacrBkgS-53mfa#scrollTo=-suS_dUTeafP)
