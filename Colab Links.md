@@ -12,3 +12,7 @@
 
 5. **CKKS_HE (Encrypted Federated Learning)**  
    [Click here to view the Colab notebook](https://colab.research.google.com/drive/1H4P4x7WVoNTZAcnl1bDacrBkgS-53mfa#scrollTo=-suS_dUTeafP)
+
+6. **MetaLearning**
+ https://colab.research.google.com/drive/1EIMEnyGNI4wF0L_uzQN0IeKNX6MXCG03
+   
