@@ -1,0 +1,18 @@
+services:
+  client3_container:
+    build: .
+    container_name: client3_container
+    privileged: true
+    ports:
+      - "6003:6003"  
+    volumes:
+      - .:/app
+    networks:
+      client-network:
+        ipv4_address: 192.168.100.13
+        mac_address: 02:42:c0:a8:64:03
+    tty: true
+
+networks:
+  client-network:
+    external: true

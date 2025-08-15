@@ -1,0 +1,18 @@
+services:
+  client5_container:
+    build: .
+    container_name: client5_container
+    privileged: true
+    ports:
+      - "6005:6005"  
+    volumes:
+      - .:/app
+    networks:
+      client-network:
+        ipv4_address: 192.168.100.15
+        mac_address: 02:42:c0:a8:64:05
+    tty: true
+
+networks:
+  client-network:
+    external: true

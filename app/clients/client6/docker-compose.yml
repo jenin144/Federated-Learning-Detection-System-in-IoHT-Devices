@@ -1,0 +1,18 @@
+services:
+  client6_container:
+    build: .
+    container_name: client6_container
+    privileged: true
+    ports:
+      - "6006:6006"  
+    volumes:
+      - .:/app
+    networks:
+      client-network:
+        ipv4_address: 192.168.100.16
+        mac_address: 02:42:c0:a8:64:06
+    tty: true
+
+networks:
+  client-network:
+    external: true

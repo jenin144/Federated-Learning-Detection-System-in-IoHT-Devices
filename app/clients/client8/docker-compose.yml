@@ -1,0 +1,18 @@
+services:
+  client8_container:
+    build: .
+    container_name: client8_container
+    privileged: true
+    ports:
+      - "6008:6008"  
+    volumes:
+      - .:/app
+    networks:
+      client-network:
+        ipv4_address: 192.168.100.18
+        mac_address: 02:42:c0:a8:64:08
+    tty: true
+
+networks:
+  client-network:
+    external: true

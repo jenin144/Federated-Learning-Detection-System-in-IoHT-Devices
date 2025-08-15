@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Notifications</title>
+  <meta http-equiv="refresh" content="10">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0A192F 0%, #172A45 50%, #2A4B6A 100%);
+      color: #D1E8FF;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(10, 25, 47, 0.9);
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(42, 75, 106, 0.2);
+      border-bottom: 1px solid rgba(100, 233, 238, 0.2);
+    }
+
+    h1 {
+      font-size: 2rem;
+      background: linear-gradient(135deg, #FFFFFF, #64E9EE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    .content {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #64E9EE;
+      margin-bottom: 30px;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #3A7CA5 0%, #64E9EE 100%);
+      color: #0A192F;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .back-btn:hover {
+      background: linear-gradient(135deg, #2A4B6A 0%, #3A7CA5 100%);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(100, 233, 238, 0.3);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    li {
+      margin: 15px 0;
+      padding: 15px;
+      background: rgba(10, 25, 47, 0.7);
+      border-radius: 8px;
+      border-left: 3px solid #64E9EE;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(42, 75, 106, 0.2);
+    }
+
+    footer {
+      background: rgba(10, 25, 47, 0.9);
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #D1E8FF;
+      border-top: 1px solid rgba(100, 233, 238, 0.2);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Notifications</h1>
+  </header>
+
+  <div class="content">
+    <h2>Here are your notifications</h2>
+    {% if notifications %}
+      <ul>
+        {% for note in notifications %}
+          <li>🔴 {{ note }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No attacks detected yet.</p>
+    {% endif %}
+    <a class="back-btn" href="/welcome">← Back to Welcome</a>
+  </div>
+
+  <footer>
+    Developed by Sondos Farrah, Jenin Mansour, and Alaa Saleem<br />
+    Supervised by Dr. Ahmad Shawahneh – Birzeit University
+  </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "total_tested_records": 2072,
+  "total_trained_records": 0,
+  "rounds": {
+    "1": {
+      "start_idx": 0,
+      "end_idx": 1000,
+      "timestamp": "2025-06-30T11:02:07.863932",
+      "status": "training_initiated",
+      "total_tested_at_start": 1415,
+      "total_trained_at_start": 0
+    }
+  },
+  "last_updated": "2025-06-30T11:05:06.273644",
+  "csv_file": "network_traffic.csv"
+}

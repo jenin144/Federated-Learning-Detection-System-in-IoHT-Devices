@@ -1,0 +1,18 @@
+  services:
+  client9_container:
+    build: .
+    container_name: client9_container
+    privileged: true
+    ports:
+      - "6009:6009"  
+    volumes:
+      - .:/app
+    networks:
+      client-network:
+        ipv4_address: 192.168.100.19
+        mac_address: 02:42:c0:a8:64:09
+    tty: true
+
+networks:
+  client-network:
+    external: true

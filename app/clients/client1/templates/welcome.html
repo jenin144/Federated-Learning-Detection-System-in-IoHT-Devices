@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home – IoHT Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0A192F 0%, #172A45 50%, #2A4B6A 100%);
+      color: #D1E8FF;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(10, 25, 47, 0.9);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(42, 75, 106, 0.2);
+      position: relative;
+      border-bottom: 1px solid rgba(100, 233, 238, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+      background: linear-gradient(135deg, #FFFFFF, #64E9EE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      color: #D1E8FF;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .about-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #3A7CA5 0%, #64E9EE 100%);
+      color: #0A192F;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .about-btn:hover {
+      background: linear-gradient(135deg, #2A4B6A 0%, #3A7CA5 100%);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(100, 233, 238, 0.3);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 30px;
+    }
+
+    h2 {
+      color: #64E9EE;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #D1E8FF;
+    }
+
+    strong {
+      color: #FFFFFF;
+    }
+
+    footer {
+      background: rgba(10, 25, 47, 0.9);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #D1E8FF;
+      border-top: 1px solid rgba(100, 233, 238, 0.2);
+    }
+
+    .client-info {
+      background: rgba(10, 25, 47, 0.7);
+      border: 1px solid rgba(100, 233, 238, 0.3);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(42, 75, 106, 0.2);
+      margin-top: 30px;
+      backdrop-filter: blur(10px);
+    }
+    
+    .header-btn {
+      position: absolute;
+      top: 20px;
+      right: 120px;
+      background: linear-gradient(135deg, #2A4B6A 0%, #3A7CA5 100%);
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .header-btn:hover {
+      background: linear-gradient(135deg, #3A7CA5 0%, #64E9EE 100%);
+      color: #0A192F;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(100, 233, 238, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cyber-Attack Detection for IoHT Devices</h1>
+    <p>Welcome to the Client Home Page</p>
+    <a class="about-btn" href="/about.html">About Us</a>
+    <a class="header-btn" href="/notifications">Notifications</a>
+  </header>
+
+  <main>
+    <section class="client-info">
+      <h2>Welcome, {{ username }}</h2>
+      <p><strong>Device Type:</strong> {{ device_type }}</p>
+      <p><strong>Model Version:</strong> {{ model_version }}</p>
+      <p><strong>IP Address:</strong> {{ client_ip }}</p>
+      <p><strong>Registered At:</strong> {{ registered_at }}</p>
+    </section>
+  </main>
+
+  <footer>
+    Developed by Sondos Farrah, Jenin Mansour, and Alaa Saleem<br />
+    Supervised by Dr. Ahmad Shawahneh – Birzeit University
+  </footer>
+  <script>
+    let lastCount = null;  // كان 0، الآن null لأنه ما تم التحقق بعد
+
+    async function checkNotifications() {
+      try {
+        const response = await fetch('/notification_count');
+        const data = await response.json();
+
+        if (lastCount === null) {
+          // أول مرة فقط: خزّن العدد بدون ما تعرض إشعار
+          lastCount = data.count;
+        } else if (data.count > lastCount) {
+          alert("📢 New attack alert received!");
+          lastCount = data.count;
+        }
+      } catch (err) {
+        console.error("Error checking notifications:", err);
+      }
+    }
+
+    setInterval(checkNotifications, 5000); // Check every 5 seconds
+  </script>
+</body>
+</html>

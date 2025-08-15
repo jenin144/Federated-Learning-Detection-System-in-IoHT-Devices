@@ -1,0 +1,10 @@
+
+services:
+  network-attack:
+    build: .
+    container_name: network-attack
+    privileged: true
+    network_mode: host
+    volumes:
+      - .:/app
+    tty: true

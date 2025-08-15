@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Attack Prediction Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .result-container { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+        .metric { margin: 10px 0; }
+        .value { font-weight: bold; color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <h1>Network Attack Prediction Results</h1>
+    <div class="result-container">
+        <h2>Prediction Summary</h2>
+        <div class="metric">Total predictions: <span class="value">{{ result.total_predictions }}</span></div>
+        <div class="metric">Predicted Attacks: <span class="value">{{ result.predicted_attacks }}</span></div>
+        <div class="metric">Predicted Normal: <span class="value">{{ result.predicted_normal }}</span></div>
+
+        <h2>Evaluation Metrics</h2>
+        <div class="metric">Accuracy: <span class="value">{{ result.accuracy }}</span></div>
+        <div class="metric">Precision: <span class="value">{{ result.precision }}</span></div>
+        <div class="metric">Recall: <span class="value">{{ result.recall }}</span></div>
+        <div class="metric">F1 Score: <span class="value">{{ result.f1_score }}</span></div>
+
+        <h2>Confusion Matrix</h2>
+        <div class="metric">True Positive (TP): <span class="value">{{ result.tp }}</span></div>
+        <div class="metric">False Positive (FP): <span class="value">{{ result.fp }}</span></div>
+        <div class="metric">False Negative (FN): <span class="value">{{ result.fn }}</span></div>
+        <div class="metric">True Negative (TN): <span class="value">{{ result.tn }}</span></div>
+    </div>
+</body>
+</html>
